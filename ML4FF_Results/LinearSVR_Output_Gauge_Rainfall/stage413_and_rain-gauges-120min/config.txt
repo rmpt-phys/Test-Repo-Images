@@ -1,0 +1,100 @@
+SEED: 42
+
+INNER_CV x OUTER_CV: 6 x 12
+
+HOLDOUT_SLICE: 0.875
+
+mdl_name: sklearn_LinearSVR
+
+SPACE: {
+    "C": "0 float\n1   hyperopt_param\n2     Literal{C}\n3     loguniform\n4       Literal{-4}\n5       Literal{2}",
+    "dual": "0 Literal{auto}",
+    "epsilon": "0 Literal{0}",
+    "fit_intercept": "0 Literal{True}",
+    "intercept_scaling": "0 float\n1   hyperopt_param\n2     Literal{reg.linear_svr.linear_svr_intercept_scaling}\n3     uniform\n4       Literal{0.5}\n5       Literal{1.5}",
+    "loss": "0 switch\n1   hyperopt_param\n2     Literal{reg.linear_svr.linear_svr_loss}\n3     randint\n4       Literal{2}\n5   Literal{epsilon_insensitive}\n6   Literal{squared_epsilon_insensitive}",
+    "max_iter": "100000",
+    "random_state": "0 hyperopt_param\n1   Literal{reg.linear_svr.linear_svr_random_state}\n2   randint\n3     Literal{5}",
+    "tol": "0 float\n1   hyperopt_param\n2     Literal{tol}\n3     loguniform\n4       Literal{-9}\n5       Literal{-3}",
+    "verbose": "0 Literal{0}"
+}
+
+BEST PARAMETERS FOUND:{'C': 2.9653840772714215, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.7410765808404396, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(3), 'tol': 0.0001281329956340174, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 1.2545288674132726, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 1.0924534133258075, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(0), 'tol': 0.0013915542675686109, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 0.5514244242314192, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.875296065825107, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(3), 'tol': 0.00031138167872919167, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 1.4033855209573605, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9419433983524533, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(1), 'tol': 0.011428605199504787, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}
+
+BEST PARAMETERS FOUND:{'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}
+
+run_ML4FF: [[['sklearn_LinearSVR', 'CV_outer-0', array([[-2.6482956 , -2.38474952, -2.12293347, ...,  0.06967944,
+         0.06334721,  0.05694316]], shape=(1, 10624)), {'C': 2.9653840772714215, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.7410765808404396, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(3), 'tol': 0.0001281329956340174, 'verbose': 0}, np.float64(0.20952512458834588)], ['sklearn_LinearSVR', 'CV_outer-1', array([[ 0.07589618,  0.06952227,  0.06337517, ...,  0.00389042,
+        -0.00620266, -0.01690602]], shape=(1, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, np.float64(0.2400021997229702)], ['sklearn_LinearSVR', 'CV_outer-2', array([[-0.02919169, -0.03973707, -0.04923191, ...,  0.08541981,
+         0.07418224,  0.0687564 ]], shape=(1, 10624)), {'C': 1.2545288674132726, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 1.0924534133258075, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(0), 'tol': 0.0013915542675686109, 'verbose': 0}, np.float64(0.2240275675138838)], ['sklearn_LinearSVR', 'CV_outer-3', array([[0.07236279, 0.06896954, 0.06477858, ..., 0.00452406, 0.0079465 ,
+        0.01746426]], shape=(1, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, np.float64(0.2037089883448989)], ['sklearn_LinearSVR', 'CV_outer-4', array([[ 0.01434472,  0.02926888,  0.04916999, ..., -0.81515718,
+        -0.92895974, -1.01080241]], shape=(1, 10624)), {'C': 0.5514244242314192, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.875296065825107, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(3), 'tol': 0.00031138167872919167, 'verbose': 0}, np.float64(0.1772238516883068)], ['sklearn_LinearSVR', 'CV_outer-5', array([[-0.7781881 ,  0.8265164 ,  0.43416033, ..., -0.0180244 ,
+        -0.01641999, -0.01618954]], shape=(1, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, np.float64(0.28744042851773915)], ['sklearn_LinearSVR', 'CV_outer-6', array([[0.0195798 , 0.0178257 , 0.01592473, ..., 0.21557599, 0.22044392,
+        0.22381395]], shape=(1, 10624)), {'C': 1.4033855209573605, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9419433983524533, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(1), 'tol': 0.011428605199504787, 'verbose': 0}, np.float64(0.19440046367150945)], ['sklearn_LinearSVR', 'CV_outer-7', array([[0.19475247, 0.19688159, 0.19868637, ..., 0.00592956, 0.00653955,
+        0.00774959]], shape=(1, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, np.float64(0.228458687344507)], ['sklearn_LinearSVR', 'CV_outer-8', array([[ 0.02070305,  0.02383131,  0.02808763, ..., -0.44910662,
+        -0.48171074, -0.42294406]], shape=(1, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, np.float64(0.22247792127487895)], ['sklearn_LinearSVR', 'CV_outer-9', array([[-0.37610317, -0.0336211 , -0.16733995, ...,  0.55591285,
+         0.58578964,  0.60851667]], shape=(1, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, np.float64(0.2334468234471044)], ['sklearn_LinearSVR', 'CV_outer-10', array([[0.60738905, 0.59546078, 0.57165701, ..., 0.4050096 , 0.39483519,
+        0.38421178]], shape=(1, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, np.float64(0.2036588508872011)], ['sklearn_LinearSVR', 'CV_outer-11', array([[ 0.35367999,  0.3400895 ,  0.32494336, ..., -0.0517694 ,
+        -0.04823429, -0.04610997]], shape=(1, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, np.float64(0.2451340296241887)], ['sklearn_LinearSVR', 'HoldOut-', array([[-0.0254833 , -0.02565474, -0.02630933, ...,  0.29018912,
+         0.25115186,  0.19703001]], shape=(1, 19732)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, np.float64(0.21704251970960017)]], [['sklearn_LinearSVR', 'CV_outer-0', array([[[717.40627381, 717.70579861, 717.96363554, ..., 716.63947156,
+         716.63924639, 716.63920519],
+        [720.05456941, 720.09054813, 720.08656901, ..., 716.56979212,
+         716.57589918, 716.58226203]]], shape=(1, 2, 10624)), {'C': 2.9653840772714215, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.7410765808404396, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(3), 'tol': 0.0001281329956340174, 'verbose': 0}, datetime.timedelta(seconds=13, microseconds=250000), datetime.timedelta(0), 9.03515625, 9.84765625, 32.0625, 0.046875], ['sklearn_LinearSVR', 'CV_outer-1', array([[[716.66472977, 716.6650549 , 716.66564507, ..., 716.55321658,
+         716.55282105, 716.55258879],
+        [716.58883359, 716.59553263, 716.6022699 , ..., 716.54932616,
+         716.55902371, 716.56949482]]], shape=(1, 2, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, datetime.timedelta(seconds=3, microseconds=203000), datetime.timedelta(0), 3.8984375, 4.30078125, 0.0, 0.0], ['sklearn_LinearSVR', 'CV_outer-2', array([[[716.55098793, 716.55074267, 716.5505083 , ..., 716.55738482,
+         716.54586827, 716.53996576],
+        [716.58017962, 716.59047974, 716.5997402 , ..., 716.47196501,
+         716.47168603, 716.47120936]]], shape=(1, 2, 10624)), {'C': 1.2545288674132726, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 1.0924534133258075, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(0), 'tol': 0.0013915542675686109, 'verbose': 0}, datetime.timedelta(seconds=2, microseconds=438000), datetime.timedelta(0), 3.90234375, 5.84375, 0.0, 0.0], ['sklearn_LinearSVR', 'CV_outer-3', array([[[716.5414036 , 716.53635606, 716.52872117, ..., 716.67654584,
+         716.67588476, 716.67625369],
+        [716.46904081, 716.46738652, 716.46394259, ..., 716.67202178,
+         716.66793826, 716.65878944]]], shape=(1, 2, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, datetime.timedelta(seconds=3, microseconds=984000), datetime.timedelta(0), 4.2265625, 5.21484375, 0.0, 0.0], ['sklearn_LinearSVR', 'CV_outer-4', array([[[716.66766534, 716.66997148, 716.68339427, ..., 716.93838502,
+         716.92688056, 716.92123182],
+        [716.65332062, 716.6407026 , 716.63422428, ..., 717.7535422 ,
+         717.8558403 , 717.93203424]]], shape=(1, 2, 10624)), {'C': 0.5514244242314192, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.875296065825107, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(3), 'tol': 0.00031138167872919167, 'verbose': 0}, datetime.timedelta(seconds=7, microseconds=609000), datetime.timedelta(0), 7.09375, 7.07421875, 0.0, 0.0], ['sklearn_LinearSVR', 'CV_outer-5', array([[[717.20787236, 718.85166696, 718.49045288, ..., 716.84362045,
+         716.83909019, 716.83374924],
+        [717.98606045, 718.02515056, 718.05629256, ..., 716.86164485,
+         716.85551018, 716.84993878]]], shape=(1, 2, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, datetime.timedelta(seconds=4, microseconds=610000), datetime.timedelta(0), 7.1953125, 6.859375, 0.0, 0.0], ['sklearn_LinearSVR', 'CV_outer-6', array([[[716.86448639, 716.85809088, 716.85172548, ..., 717.13629178,
+         717.1116114 , 717.08632399],
+        [716.84490659, 716.84026518, 716.83580074, ..., 716.92071579,
+         716.89116747, 716.86251004]]], shape=(1, 2, 10624)), {'C': 1.4033855209573605, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9419433983524533, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(1), 'tol': 0.011428605199504787, 'verbose': 0}, datetime.timedelta(seconds=3, microseconds=906000), datetime.timedelta(0), 6.7578125, 7.0, 0.0, 0.0], ['sklearn_LinearSVR', 'CV_outer-7', array([[[717.02957063, 717.00496488, 716.98087652, ..., 716.59754238,
+         716.59754238, 716.59754238],
+        [716.83481817, 716.80808329, 716.78219015, ..., 716.59161282,
+         716.59100283, 716.58979279]]], shape=(1, 2, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, datetime.timedelta(seconds=5, microseconds=672000), datetime.timedelta(0), 7.16796875, 7.29296875, 0.0, 0.0], ['sklearn_LinearSVR', 'CV_outer-8', array([[[716.60842552, 716.60842552, 716.60842552, ..., 716.7843156 ,
+         716.74676352, 716.79789719],
+        [716.58772247, 716.58459421, 716.58033789, ..., 717.23342222,
+         717.22847427, 717.22084126]]], shape=(1, 2, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, datetime.timedelta(seconds=6, microseconds=125000), datetime.timedelta(0), 6.81640625, 6.671875, 0.0, 0.0], ['sklearn_LinearSVR', 'CV_outer-9', array([[[716.83457787, 717.16392079, 717.01359998, ..., 720.05550318,
+         719.94377897, 719.83445626],
+        [717.21068104, 717.19754189, 717.18093994, ..., 719.49959033,
+         719.35798933, 719.22593959]]], shape=(1, 2, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, datetime.timedelta(seconds=6, microseconds=547000), datetime.timedelta(0), 7.15625, 7.2421875, 0.0, 0.0], ['sklearn_LinearSVR', 'CV_outer-10', array([[[719.71010528, 719.58292672, 719.45092857, ..., 716.77379173,
+         716.76884629, 716.76502939],
+        [719.10271623, 718.98746594, 718.87927156, ..., 716.36878213,
+         716.3740111 , 716.38081761]]], shape=(1, 2, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, datetime.timedelta(seconds=7, microseconds=219000), datetime.timedelta(0), 7.36328125, 7.265625, 0.0, 0.0], ['sklearn_LinearSVR', 'CV_outer-11', array([[[716.74289198, 716.7389712 , 716.73418308, ..., 716.59354996,
+         716.59892964, 716.60296847],
+        [716.38921198, 716.39888171, 716.40923972, ..., 716.64531936,
+         716.64716393, 716.64907844]]], shape=(1, 2, 10624)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, datetime.timedelta(seconds=7, microseconds=812000), datetime.timedelta(0), 7.7734375, 7.16796875, 0.0, 0.0], ['sklearn_LinearSVR', 'HoldOut-', array([[[716.62560417, 716.62743061, 716.62856369, ..., 718.05000175,
+         717.99058586, 717.93317945],
+        [716.65108747, 716.65308535, 716.65487302, ..., 717.75981263,
+         717.739434  , 717.73614944]]], shape=(1, 2, 19732)), {'C': 1.252077712497848, 'dual': 'auto', 'epsilon': 0, 'fit_intercept': True, 'intercept_scaling': 0.9349979536508063, 'loss': 'epsilon_insensitive', 'max_iter': 100000, 'random_state': np.int64(2), 'tol': 0.00086757756018441, 'verbose': 0}, datetime.timedelta(seconds=80, microseconds=906000), datetime.timedelta(0), 140.01953125, 112.15234375, 0.0, 0.00390625]]]
